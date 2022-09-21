@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body {
+    box-sizing: border-box;
+}
+
+
+/************** Divs *************/
+
+.big {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 50px 50px 0px 50px;
+    flex: 25%;
+}
+
+.big>* {
+    text-align: center;
+    width: 272px;
+}
+
+.highlight {
+    margin-left: 400px;
+    display: flex;
+    width: fit-content;
+}
+
+
+/************** Highlight *************/
+
+.hr-text {
+    width: 49px;
+    height: 1px;
+    border: 0;
+    background: linear-gradient(269.79deg, #F4D613 2.25%, #01305B 99.86%);
+}
+
+h1 {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    color: #6F01BA;
+    margin: 0px 26px;
+}
+
+
+/************** Shape *************/
+
+.shapeA {
+    position: relative;
+    height: 47px;
+    width: 272px;
+    background: #F4D613;
+    border-radius: 20px 0px 0px 20px;
+    margin-top: 27px;
+}
+
+.shapeB {
+    position: relative;
+    height: 47px;
+    width: 272px;
+    background: #8C02EB;
+    border-radius: 0px 20px 20px 0px;
+    margin-top: 64px;
+}
+
+.radi {
+    border-radius: 0px 0px 0px 0px;
+}
+
+.shape1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border: 28px solid transparent;
+    border-top-color: #F4D613;
+    border-bottom: 0;
+    margin-left: -28px;
+    margin-bottom: -28px;
+}
+
+.shape2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border: 28px solid transparent;
+    border-bottom-color: #8C02EB;
+    border-top: 0;
+    margin-left: -28px;
+    margin-top: -28px;
+}
+
+
+/************** Circle *************/
+
+.circle1 {
+    background: #F4D613;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 141px;
+    height: 141px;
+    font-family: 'Lora';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 61px;
+}
+
+.circle2 {
+    background: #8C02EB;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 141px;
+    height: 141px;
+    font-family: 'Lora';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 61px;
+    margin-top: 37px;
+}
+
+.marg {
+    margin-left: 63px;
+}
+
+
+/************** Line *************/
+
+.v1 {
+    height: 112px;
+    width: 3px;
+    border-right: 3px solid #F4D613;
+    margin-left: 131px;
+    margin-top: 37px;
+}
+
+.v2 {
+    height: 112px;
+    width: 3px;
+    border-right: 3px solid #8C02EB;
+    margin-left: 131px;
+    margin-top: 37px;
+}
+
+
+/************** Paragraph *************/
+
+.paragraphA {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #F4D613;
+    margin-top: 58px;
+}
+
+.paragraphB {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #8C02EB;
+    margin-top: 158px;
+}
+
+
+/************** Second Paragraph *************/
+
+.paragraph1 {
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-left: 37px;
+    margin-top: 32px;
+    text-align: center;
+    color: #888888;
+}
+
+@media screen and (max-width: 992px) {
+    .big {
+        flex: 50% !important;
+        justify-content: center
+    }
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .big {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .big>* {
+        margin-top: 20px;
+    }
+    .paragraphB {
+        margin-top: 20px;
+    }
+    .highlight {
+        margin: auto;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
